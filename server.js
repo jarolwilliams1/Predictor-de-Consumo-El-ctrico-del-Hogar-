@@ -5,7 +5,13 @@ const { engine } = require("express-handlebars"); // Motor de Handlebars
 const app = express();
 
 // Configurar Handlebars como el motor de vistas
-app.engine("hbs", engine({ extname: ".hbs", defaultLayout: "main" }));
+app.engine("hbs", engine({
+    extname: ".hbs",
+    defaultLayout: "main",
+    helpers: {
+        eq: (a, b) => a === b
+    }
+}));
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
 
