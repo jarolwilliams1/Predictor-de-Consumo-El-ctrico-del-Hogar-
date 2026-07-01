@@ -1,15 +1,24 @@
 const express = require("express");
 const path = require("path");
+const { engine } = require("express-handlebars"); // Motor de Handlebars
+
 const app = express();
 
+// Configurar Handlebars como el motor de vistas
+app.engine("hbs", engine({ extname: ".hbs", defaultLayout: "main" }));
+app.set("view engine", "hbs");
+app.set("views", path.join(__dirname, "views"));
+
+// Middlewares esenciales para leer formularios (POST)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Servir archivos estáticos (CSS/Bootstrap)
 app.use(express.static(path.join(__dirname, "public")));
 
-// Importar rutas apuntando a los nombres reales de tus archivos físicos
-const home = require("./routers/home")
+// Cargar las rutas
+const homeRouter = require("./routers/home");
+app.use("/", homeRouter);
 
-// ruta (mapeo de url)
-app.use("/", home);
-
-app.listen(3000, ()=>{
-    console.log("Servidor corriendo en http://localhost:3000")
-})
+const PORT = 3000;
+app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
