@@ -30,7 +30,7 @@
 <table class=" col-sm-12 col-md-6 col-lg-4">
   <thead>
     <tr>
-      <th>#</th>
+      <th></th>
       <th>Fecha</th>
       <th>Consumo (kWh)</th>
     </tr>
@@ -39,71 +39,94 @@
   <tbody>
     <tr>
       <td>1</td>
-      <td><input type="date"></td>
-      <td>Dato A</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
     <tr>
       <td>2</td>
-      <td><input type="date"></td>
-      <td>Dato B</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
     <tr>
       <td>3</td>
-      <td><input type="date"></td>
-      <td>Dato C</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
     <tr>
       <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
  <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>5</td>
+     <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     
 </tr> 
 
 
     <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>6</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr> 
 
 
     <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>7</td>
+     <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
      <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>8</td>
+     <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
 
      <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>9</td>
+    <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr> 
 
     <tr>
-      <td>4</td>
-      <td><input type="date"></td>
-      <td>Dato D</td>
+      <td>10</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
     </tr>
-    <!-- Puedes seguir agregando más filas -->
+
+    
+    <tr>
+      <td>11</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
+    </tr>
+
+    
+    <tr>
+      <td>12</td>
+      <td><input type="date" class="form-control input-data" id=""></td>
+      <td><input type="number" step="0.01" placeholder="Ej: 142.50" class="form-control input-consumo" id=""></td>
+    </tr>
+
   </tbody>
 </table>
 
+<div class="linea"></div>
 
+<label for="">Modo de predicción</label>
+<select class="form-select" aria-label="Default select example">
+  <option selected id="sma">Promedio Móvil Simple (SMA) </option>
+  <option value="1" id="rl">Regresión Lineal </option>
+  <option value="2" id="vp">Variación Porcentual</option>
+  <option value="3" id="dt">Detección de Tendencia</option>
+</select>
+<button type="button" class="btn btn-primary">Primary</button>
 
 </section>
 
