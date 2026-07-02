@@ -13,41 +13,147 @@ header{
     
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
 
 .section-home{
      background-color: #f8f9fa;
 
-    min-height: 800px;
-    max-width: 700px;
+    min-height: 100%;
+    max-width: 50%;
     border-radius: 20px;
 
     margin-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-display: flex;
-justify-content: center;
+    padding-bottom: 40px;
+    margin: 30px;
+  
+
 
 
 }
 
 
-.linea{
+.linea, .linea2 {
     background-color: rgba(128, 128, 128, 0.28);
     width: 100%;
     height: 1.5px;
 }
 
+.linea{
+    margin-top: 55px;
+}
+
+
 .resultado-box{
     width: 100%;
     padding-top: 10px;
     padding-bottom: 20px;
+}
+
+.input-data,  .input-consumo
+{
+    background-color: #b0f0d146;
+    max-width: 90%;
+    
+}
+
+.title{
+    font-family: Franklin Gothic Medium;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.text{
+    font-size: 13px;
+    margin-bottom: -30px;
+}
+
+table{
+    margin-top: 20px;
+    width: 100%;
+    height: 65%;
+    
+
+}
+
+tr{
+display: flex;
+justify-content: space-around;
+
+max-height: 45px;
+
+width: 100%;
+
+
+}
+
+.td-numero{
+    width: 10%;
+}
+.td-class{
+    width: 60%;
+
+}
+
+.contenedor{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linea2{
+    margin-top: 30px;
+}
+
+.text-modo{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.boton{
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    font-family: Franklin Gothic Medium;
+    font-size: 20px;
+    text-align: center;
+    background-color: #198754;
+    border: #198754;
+}
+
+.boton:hover{
+
+    background-color: #34b579;
+}
+
+.casilla
+{
+    height: 120px;
+   max-width:300px;
+    background-color: #b0f0d146;
+    border-radius: 7%;
+    border: #34b579 solid 1px; 
+
+
+}
+
+.grid-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.casilla-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 13px;
+    padding: 0px 10px;
+    margin-top: 10px;
+
+}
+
+.casilla-valor{
+        font-size: 20px;
+            font-family: Franklin Gothic Medium;
+margin-top: -15px;
+
 }
